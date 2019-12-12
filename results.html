@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Schrute Farms Bed &amp; Breakfast</title>
+      <!-- 
+         Schrute Farms Bed & Breakfast Reserve
+         Filename: index.html
+
+         Author:   Kyden Corelis
+         Date:     12-11-19
+
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <script src="modernizr.custom.40753.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" href="images/SF.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="icon" sizes="192x192" href="images/android.png">
+   </head>
+   <body>
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+      <header>
+         <h1><a href="index.html"><img src="images/Schrute Farms logo.jpg" width="" height="" alt="Schrute Farms Bed and Breakfast"></a></h1>
+      </header>
+      <nav class="sitenavigation">
+         <p><a href="index.html">Home</a></p>
+         <p><a href="aboutus.html">About Us</a></p>
+         <p><a href="rooms.html">Rooms</a></p>
+         <p><a href="reserve.html">Reservations</a></p>
+         <p><a href="https://weather.com/weather/hourbyhour/l/Scranton+PA?canonicalCityId=4a169d1779bb32b7c11a9ec1eac6f968666114cc10d8a93bbfcd6a6932ee44db" target="_blank">Weather</a></p>
+         <p><a href="https://www.google.com/maps/place/Scranton,+PA/data=!4m2!3m1!1s0x89c4d93a77484bbb:0xfff27920ab9bfae8?sa=X&ved=2ahUKEwji67z__63mAhURK30KHUhtC-wQ8gEwIHoECBkQBA" target="_blank">Directions</a></p>
+      </nav>
+      <article id="contentstart">
+         <div class="container">
+            <h2>Your form has been submitted</h2>
+            <div class="results">
+               <h3>You entered the following data:</h3>
+         
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+            </div>
+         </div>
+      </article>
+    <footer>
+         <p>Scranton, Pennsylvania <img src="images/smallbeet.png" width="16" height="16" alt=""> (570) 555-5555</p>
+      </footer>
+   </body>
+</html>
